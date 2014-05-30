@@ -1,0 +1,138 @@
+#home{
+	background: #fff url(../img/bg1.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+	width: 100vw;
+	min-height: 800px;
+	overflow: hidden;
+}
+
+#about{
+	background: #eee;
+	width: 100vw;
+	height: 100vh;
+}
+.my-title{
+	color: #000;
+	position: relative;
+	top: 375px;
+	left: 8%;
+	display: inline-block;
+}
+.my-title h1, .my-title h3{
+	font-weight: normal;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.my-title h1{
+	font-size: 72px;
+	line-height: 79px;
+	padding: 10px;
+	margin-left: -19px;
+}
+
+.my-title h3{
+	font-size: 24px;
+	line-height: 31px;
+	padding: 5px;
+}
+
+.my-title h1 span{
+	font-size: 80px;
+	color: #e91c6b;
+}
+
+/*Tile Summary*/
+.summary p{
+	text-align: center;
+	font-size: 25px;
+	color: #fff;
+	line-height: 120%;
+	font-family: 'Roboto Slab', serif;
+}
+
+.summary{
+	padding: 25px;
+}
+
+.summary .add-on{
+	font-size: 13px;
+}
+
+.summary .add-on-big{
+	font-size: 30px;
+}
+
+/*Tile Positioning*/
+.about, .profile-pic, .portfolio{
+	position: relative;
+	top: -45px;
+	left: 600px;
+}
+
+.resume{
+	position: relative;
+	top: 155px;
+	left: 200px;
+}
+
+.blog{
+	position: relative;
+	top: 355px;
+	left: 0;
+}
+
+/*Overriding Metro CSS*/
+.metro .tile{
+	width: 200px;
+	height: 200px;
+	margin: 0;
+}
+
+#home i{
+	border:5px solid #fff;
+	border-radius: 50%;
+	height: 110px;
+	width: 110px;
+	line-height: 90px;
+	font-size: 75px;
+	margin-top: -55px;
+	margin-left: -55px;
+}
+
+#home .tile-status{
+	text-align: center;
+}
+
+
+#home .tile-status span{
+	font-size: 20px;
+	margin: 0 auto;
+}
+
+/*Helpers*/
+.hidden{
+	display: none;
+}
+
+/*Vertical Menu*/
+.nav ul li{
+	list-style: none;
+}
+
+.nav{
+	display: inline-block;
+	position: fixed;
+	top: 0;
+	height: 100vh;
+}
+
+.nav ul{
+	margin: 0;
+}
+
+.nav ul li .tile{
+	width: 150px;
+	height: 150px;
+}
