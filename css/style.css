@@ -7,7 +7,7 @@
 	overflow: hidden;
 }
 
-#about{
+#about, #portfolio, #resume, #blog{
 	background: #eee;
 	width: 100vw;
 	height: 100vh;
