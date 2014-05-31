@@ -42,10 +42,35 @@ $(document).ready(function(){
 		$(this).find('.summary').addClass('hidden');
 	});
 
-	//When any page other than home comes into focus
-	// $('#about,#portfolio,#resume,#blog,#contact').focus(function(event) {
-	// 	$(this).prepend($('.nav').removeClass('hidden').html());
-	// });
+	//Vertical Menu hover and click features.
+	$('.nav ul li').hover(function(e){
+		e.preventDefault();
+		e.stopPropagation();
+		$(this).find('i').stop().animate({
+			'left' : "-20%"
+		},500, function(){
+			$(this).parent().next().removeClass('hidden').fadeIn();
+		});
+	}, function(){
+		$(this).find('.tile-status').fadeOut('fast').addClass('hidden');
+		$(this).find('i').stop().animate({
+			'left' : "50%"
+		},500);
+	});
+
+	//Smooth Scroll
+	$('a[href^="#"]').click(function(e){
+		e.preventDefault();
+
+		var target = this.hash;
+		var $target = $(target);
+		
+		$('html,body').stop().animate({
+			'scrollTop' : $target.offset().top
+		}, 1500, 'swing', function(){
+			window.location.hash = target;
+		});
+	});
 });
 
 function changeJobDesc(){
