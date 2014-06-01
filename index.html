@@ -76,54 +76,60 @@
                 </div><!--Random Profile Pics -->
 
                 <div class="portfolio">
-                    <div class="tile bg-teal">
-                        <div class="tile-content icon">
-                            <i class="icon-laptop"></i>
+                    <a href="#portfolio">
+                        <div class="tile bg-teal">
+                            <div class="tile-content icon">
+                                <i class="icon-laptop"></i>
+                            </div>
+                            <div class="tile-status">
+                                <span class="name">Portfolio</span>
+                            </div>
+                            <div class="hidden summary">
+                                <p>
+                                   Apps,Hacks, Mockups, Games and more...
+                                </p>
+                                <p class="add-on">My Best Works are here!</p>
+                            </div>
                         </div>
-                        <div class="tile-status">
-                            <span class="name">Portfolio</span>
-                        </div>
-                        <div class="hidden summary">
-                            <p>
-                               Apps,Hacks, Mockups, Games and more...
-                            </p>
-                            <p class="add-on">My Best Works are here!</p>
-                        </div>
-                    </div>
+                    </a>
                 </div><!--Portfolio Tile -->
 
                 <div class="resume">
-                    <div class="tile bg-lime">
-                        <div class="tile-content icon">
-                            <i class="icon-newspaper"></i>
+                    <a href="#resume">
+                        <div class="tile bg-lime">
+                            <div class="tile-content icon">
+                                <i class="icon-newspaper"></i>
+                            </div>
+                            <div class="tile-status">
+                                <span class="name">Resume</span>
+                            </div>
+                            <div class="hidden summary">
+                                <p>
+                                   View My Resume.
+                                </p>
+                                <p class="add-on-big"> Download it.</p>
+                            </div>
                         </div>
-                        <div class="tile-status">
-                            <span class="name">Resume</span>
-                        </div>
-                        <div class="hidden summary">
-                            <p>
-                               View My Resume.
-                            </p>
-                            <p class="add-on-big"> Download it.</p>
-                        </div>
-                    </div>
+                    </a>
                 </div><!--Resume Tile -->
 
                  <div class="blog">
-                    <div class="tile bg-lightRed">
-                        <div class="tile-content icon">
-                            <i class="icon-bookmark-4"></i>
+                    <a href="#blog">
+                        <div class="tile bg-lightRed">
+                            <div class="tile-content icon">
+                                <i class="icon-bookmark-4"></i>
+                            </div>
+                            <div class="tile-status">
+                                <span class="name">Blog</span>
+                            </div>
+                            <div class="hidden summary">
+                                <p>
+                                    Articles, Poems & Random thoughts..
+                                </p>
+                                <p class="add-on">Have fun reading!</p>
+                            </div>
                         </div>
-                        <div class="tile-status">
-                            <span class="name">Blog</span>
-                        </div>
-                        <div class="hidden summary">
-                            <p>
-                                Articles, Poems & Random thoughts..
-                            </p>
-                            <p class="add-on">Have fun reading!</p>
-                        </div>
-                    </div>
+                    </a>
                 </div><!--Resume Tile -->
        
                 <!-- Tiles End -->
@@ -132,11 +138,11 @@
                 <article>
                     <h2><span>A</span>bout <span>M</span>e</h2>
                     <p>
-                        Hello, I am <span class="highlight">Tanvir</span> - Programmer, Designer, Dreamer.
+                        Hello, I am <span class="highlight" id="contact-me">Tanvir</span> - Programmer, Designer, Dreamer.
                     </p>
                     
                     <p>
-                        I graduated from the <span class="highlight">University of Pennsylvania</span> with a Masters in Computer Science. My concentration was Game Design and Computer Graphics.
+                        I graduated from the <span class="highlight">University of Pennsylvania</span> with a Masters in Computer Science. My concentration was <span id="contact-me">Game Design and Computer Graphics</span>.
                     </p>
                     <p>
                         Professionally, I am training myself to be an accomplished <span class="highlight">Front End Developer</span> and <span class="highlight">UX Guru</span>. This website is a showcase of my skills and will be constantly updated as I keep getting better and better.
@@ -179,17 +185,133 @@
             </section>
             <section id="portfolio">
                 <article>
-                    test
+                    <h2><span>M</span>y <span>P</span>ortfolio</h2>
+                    <div>
+                        <ul id="stage">
+                            <a href="http://tanviraslam.github.io/LocPix" target="_blank"><li><img src="img/port_locpix.jpg" class="span4 cycle desaturate" alt=""></li></a>
+                            <a href="http://tanviraslam.github.io/suade" target="_blank"><li><img src="img/port_suade.jpg" class="span4 cycle desaturate" alt=""></li></a>
+                            <a href="http://tanviraslam.github.io/ShopListApp" target="_blank"><li><img src="img/port_shop.jpg" class="span4 cycle desaturate" alt=""></li></a>
+                            <a href="http://tanviraslam.github.io/starwarsquiz" target="_blank"><li><img src="img/port_star.jpg" class="span4 cycle desaturate" alt=""></li></a>
+                            <a href="#home" target="_blank"><li><img src="img/port_port.jpg" class="span4 cycle desaturate" alt=""></li></a>
+                        </ul>
+                    </div>
                 </article>
             </section>
             <section  id="resume">
+                <article>
+                    <h2><span>M</span>y <span>R</span>esume</h2>
                 
+                    <div class="tab-control" data-role="tab-control" data-effect="fade[slide]">
+                        <ul class="tabs">
+                            <li class="active"><a href="#edu">Education</a></li>
+                            <li><a href="#workex">Work Experience</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                        </ul>
+                     
+                        <div class="frames">
+                            <div class="frame" id="edu">
+                                <dl>
+                                    <dt>Master of Science in Engineering: Computer And Information Technology, December 2012</dt>
+                                    <dd>University of Pennsylvania, School of Engineering and Applied Sciences. GPA – 3.44/4.0</dd>
+                                    <dt>Bachelor of Technology: Computer Science Engineering, May 2010</dt>
+                                    <dd>VIT University, Vellore, Tamil Nadu, India. GPA – 8.57/10.0</dd>
+                                </dl>
+                            </div>
+                            <div class="frame" id="workex">
+                                <dl>
+                                    <dt>Software Development Engineer at ZL Technologies Inc (Mar 2013 – present)</dt>
+                                    <dd>
+                                        <ul>
+                                            <li>
+                                                <p>Front End Development</p>
+                                                <ul>
+                                                    <li>Protoyped and initiated a complete UI overhaul of the current product UI migrating from ExtJS to AngularJS.</li>
+                                                    <li>Responsible for maintaining the entire front end of the product which involves bug-fixes, health checks and code optimization.</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <p>Product Development</p> 
+                                                <ul>
+                                                    <li>Responsible for a number of features and enhancements in the current product. Involved in all phases right from gathering requirements to prototyping and developing them.</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <p>Customer Support</p>
+                                                <ul>
+                                                    <li>Part of the core team responsible for troubleshooting and fixing customer issues of medium to high severity.</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>Vice-Chair, International Affairs, GAPSA(May 2012 – April 2013)</dt>
+                                    <dd>
+                                        <ul>
+                                            <li>One of the 12 elected executives representing 11,000 graduate students at University of Pennsylvania</li>
+                                            <li>One of the key persons in charge of carrying out a budget plan of $1.4 million</li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>Technology and Engineering beat reporter, The Daily Pennsylvanian(June 2012 – January 2013)</dt>
+                                    <dd>Reporter for one of the most widely read student run daily newspaper with a readership of 20000+ students and faculty members.</dd>
+                                </dl>
+                            </div>
+                            <div class="frame" id="projects">
+                                <dl>
+                                    <dt>mICE</dt>
+                                    <dd>Windows phone 8 mobile app for EMT's. Winner of the Philadelphia Startup Weekend 2.0 and finalist for DreamIT Venture's spring 2013 batch.</dd>
+                                </dl>
+                                <dl>
+                                    <dt>Consumer Voice</dt>
+                                    <dd>A touch based feedback system for mentally ill and technology illiterate patients. Under development for the School of Nursing at Penn. Android programming and UI development.</dd>
+                                </dl>
+                                <dl>
+                                    <dt>Volume Renderer using Voxel Grid</dt>
+                                    <dd>Created using C++. Densities were generated using perlin noise functions.</dd>
+                                </dl>
+                                <dl>
+                                    <dt>Lenguins</dt>
+                                    <dd>3D game created by implementing steering behaviors based on Craig Reynolds paper. Tools used: Unity 3D ,Maya, C#</dd>
+                                </dl>
+                                <dl>
+                                    <dt>3D Asteroids</dt>
+                                    <dd>A 3D version of the popular asteroids game using C#, Maya and Unity3d.</dd>
+                                </dl>
+                                <dl>
+                                    <dt>T programming language</dt>
+                                    <dd>Developing my own programming language as a learning experiment. Created my own basic BNF grammar and have implemented the tokenizer, recognizer, parser and interpreter so far in java.</dd>
+                                </dl>
+                            </div>
+                            <div class="frame" id="skills">
+                                <dl>
+                                    <dt>Programming Languages</dt>
+                                    <dd>Javascript, Python, C++, Java.</dd>
+                                </dl>
+                                <dl>
+                                    <dt>Web and mobile Technology</dt>
+                                    <dd>HTML 5, CSS 3, jQuery, Bootstrap, AngularJS, Backbone</dd>
+                                </dl>
+                                <dl>
+                                    <dt>Software</dt>
+                                    <dd>Adobe Photoshop, Adobe Aftereffects,Autodesk Maya, Justinmind Prototyper, Unity3D</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </article>
             </section>
             <section id="blog">
-                
-            </section>
-            <section id="contact">
-                
+                <article>
+                    <h2><span>M</span>y <span>B</span>log</h2>
+                    <p>Here is a list of all my writings spread across the internet.</p>
+                    <ul>
+                        <li><a href="http://www.quora.com/Tanvir-Aslam" target="_blank">My articles on Quora</a></li>
+                        <li><a href="http://www.thedp.com/staff/tanvir-aslam" target="_blank">My writings as a reporter for The Daily Pennsylvanian</a></li>
+                    </ul>
+                </article>
             </section>
 
             <!--Vertical Menu-->
@@ -256,6 +378,18 @@
                             </div>
                         </a>
                     </li>
+                    <li>
+                        <a href="#contact-me">
+                            <div class="tile bg-magenta">
+                                <div class="tile-content icon">
+                                    <i class="icon-phone"></i>
+                                </div>
+                                <div class="tile-status hidden">
+                                    <span class="name">Contact</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -266,6 +400,7 @@
         <script type="text/javascript" src="js/mousewheel.min.js"></script>
         <script type="text/javascript" src="js/metro.min.js"></script>
         <script type="text/javascript" src="js/skrollr.js"></script>
+        <script type="text/javascript" src="js/quicksand.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>

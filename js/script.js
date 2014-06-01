@@ -61,16 +61,24 @@ $(document).ready(function(){
 	//Smooth Scroll
 	$('a[href^="#"]').click(function(e){
 		e.preventDefault();
-
+		e.stopPropagation();
 		var target = this.hash;
 		var $target = $(target);
+		if(!$target.is('#edu,#workex,#projects,#skills')){
+			$('html,body').stop().animate({
+				'scrollTop' : $target.offset().top
+			}, 1500, 'swing', function(){
+				window.location.hash = target;
+			});
+		}
 		
-		$('html,body').stop().animate({
-			'scrollTop' : $target.offset().top
-		}, 1500, 'swing', function(){
-			window.location.hash = target;
-		});
 	});
+
+	//Portfolio Tiles Hover Effect
+	$('#stage img').hover(function(){
+		$(this).toggleClass('desaturate popout bd-darkGreen');
+	});
+
 });
 
 function changeJobDesc(){

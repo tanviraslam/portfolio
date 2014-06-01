@@ -10,8 +10,21 @@
 #about, #portfolio, #resume, #blog{
 	background: #eee;
 	width: 100vw;
-	height: 100vh;
+	min-height: 800px;
 }
+
+#home, #blog{
+	margin-bottom: -0.6em;
+}
+
+#resume,#about{
+	margin-bottom: -0.65em;
+}
+
+#portfolio{
+	margin-bottom: -0.9em;
+}
+
 .my-title{
 	color: #000;
 	position: relative;
@@ -38,7 +51,7 @@
 	padding: 5px;
 }
 
-.my-title h1 span, #about h2 span{
+.my-title h1 span, #about h2 span, #portfolio h2 span, #resume h2 span,#blog h2 span{
 	font-size: 80px;
 	color: #e91c6b;
 }
@@ -119,7 +132,7 @@
 /*Vertical Menu*/
 .nav ul li{
 	list-style: none;
-	height: 20%;
+	height: 16.66%;
 }
 
 .nav ul li:hover{
@@ -192,9 +205,62 @@ article{
 
 /*Portfolio Section*/
 #portfolio article{
+	/*outline: 1px solid black;*/
+}
+
+#portfolio article ul li{
+	list-style: none;
+	display: inline;
+}
+
+
+#portfolio article h2{
+	font-size: 60px;
+	padding: 20px 0 30px 0;
+}
+
+#portfolio ul li img{
+	margin: 20px 2px 20px 50px;
+	height: 20em;
+	-webkit-transition: all ease 1s;
+	-moz-transition: all ease 1s;
+	-o-transition: all ease 1s;
+	-ms-transition: all ease 1s;
+	transition: all ease 1s;
+}
+
+.desaturate{
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+}
+
+.popout{
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2);
+}
+/*Resume Section*/
+#resume article{
+	/*outline: 1px solid black;*/
+}
+
+
+#resume article h2{
+	font-size: 60px;
+	padding: 20px 0 30px 0;
+}
+
+#edu,#workex,#skills,#projects{
 	outline: 1px solid black;
 }
 
+/*Blog section*/
+#blog article h2{
+	font-size: 60px;
+	padding: 20px 0 30px 0;
+}
 /*Social media icons effects*/
 .social{
 	display: inline;
